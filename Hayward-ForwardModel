@@ -1,0 +1,118 @@
+Attachment Wahrhaftig - Streetcar to Subduction.pdf successfully uploaded and added.
+Conversation opened. 10 messages. All messages read.
+
+Skip to content
+Using UC Berkeley Mail with screen readers
+You are invisible.
+Go visible
+	ALEXANDER BRYK
+	Chris Wong
+	Claire Wilkin
+	Collin Bode
+	Daniella Marie Rempe
+	Elizabeth Niespolo
+	Jasper Oshun
+	Kristen E Fauria
+	Sky M. Lovill
+	William Dietrich
+Move to Inbox
+ 
+More
+ 
+9 of 10
+ 
+hw
+Jesse Hahm		Attachments11/19/14
+Jesse Hahm		Attachments11/19/14
+On Wed, Nov 19, 2014 at 10:24 AM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > >
+Jesse Hahm		Attachments11/20/14
+On Wed, Nov 19, 2014 at 3:45 PM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > > ...
+Jesse Hahm <wjhahm@berkeley.edu>
+	
+Attachments11/22/14
+		
+to me
+2 Attachments
+Preview attachment haywardForwardModel.py
+[Text]
+Preview attachment Assignment5_Hahm.docx
+[Word]
+Jesse Hahm <wjhahm@berkeley.edu>
+	
+Attachments11/22/14
+		
+to me
+2014-11-22 16:41 GMT-08:00 Jesse Hahm <wjhahm@berkeley.edu>:
+Attachments area
+Preview attachment haywardForwardModel.py
+[Text]
+Jesse Hahm		Attachments11/23/14
+On Sat, Nov 22, 2014 at 7:36 PM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > > ...
+Jesse Hahm		Attachments11/24/14
+On Sun, Nov 23, 2014 at 7:53 PM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > > ...
+Jesse Hahm <wjhahm@berkeley.edu>
+	
+Attachments11/24/14
+		
+to me
+Attachments area
+Preview attachment assignment_6_Hahm.docx
+[Word]
+	
+Click here to Reply or Forward
+Using 1.4 GB
+©2015 Google - Terms of Service - Privacy - Program Policies
+Powered by
+Last account activity: 5 hours ago
+Details
+	
+	
+haywardForwardModel.py
+
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 19 12:21:51 2014
+
+@author: wjh
+"""
+
+import IPython
+import math
+import matplotlib.pyplot as plt 
+import pylab
+import numpy as np
+import scipy
+from array import *
+
+
+
+
+stations = ['DAVIDSON', 'TAM_3', 'PRESIDIO', 'NAVY', 'PBL1', 'ANGEL', 'TIBB', 'MOLA', 'SANPABLO', 'UCBERK', 'BALD', 'NUNE', 'BRIB', 'HILLS', 'SKYLINE', 'ROCK_2', 'DIABLO_2']
+distance = [-23.08, -21.66, -19.16, -12.43, -13.5, -13.68, -13.17, -7.57, -6.45, -1.18, 2.79, 6.01, 9.99, 12.94, 1.8, 10.02, 24.87] #km
+velocity = [14.83, 15.33, 10.76, 10.06, 9.09, 11.62, 11.42, 5.27, 10.26, 7.65, 2.21, 4.28, 0, -0.76, 4.06, -1.6, -5.96] #mm/yr
+velocityError = [0.87, 1.24, 0.56, 0.59, 0.66, 1.27, 0.66, 0.85, 1.2, 0.72, 0.66, 0.85, 0.54, 0.64, 1.23, 0.81, 0.73] #mm/yr
+
+#convert to numpy arrays
+velocity = numpy.array(velocity)
+distance = numpy.array(distance)
+velocityError = numpy.array(velocityError)
+#center velocities about mean
+velocity = velocity - 6.38 
+
+row = 0
+while row < 360:
+   
+    row = row + 1
+ 
+fig = plt.figure()
+plt.scatter(distance,velocity)
+plt.errorbar(distance,velocity, yerr=velocityError, fmt='o')
+plt.xlabel('N55E distance from HF (m)')
+plt.ylabel('N35W velocity (m/yr)')
+
+#for i, txt in enumerate(stations):
+ #   plt.annotate(txt, (distance[i]-8,velocity[i]-2))
+
+matplotlib.pyplot.show()
+
+Displaying haywardForwardModel.py.
