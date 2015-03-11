@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 19 12:21:51 2014
+
+@author: wjh
+"""
+
+import IPython
+import math
+import matplotlib
+import pylab
+import numpy as np
+import scipy
+from array import *
+
+def transform(alpha):
+    alpha = np.deg2rad(alpha)
+    result = np.array([np.power(np.cos(alpha),2), 2*np.cos(alpha)*np.sin(alpha), np.power(np.sin(alpha),2)])
+    return result
+
+stations = ['CD', 'BD', 'AD', 'BC', 'AC', 'AB']
+strainRates = [0.479, -15.623, -6.602, -0.649, 12.333, 0.310]
+alphas = [50.4, 97.3, 134.8, 141, 178.5, 225.2]
+
+G = []
+for i in alphas:
+    G.append(transform(i))
+
+G = np.matrix(G)
+D = np.matrix(strainRates).T
+mEst = np.dot(np.dot(np.linalg.inv(np.dot(G.T,G)),G.T),D)
