@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+
+"""
+import numpy as np
+import matplotlib.pyplot as plt
+import csv
+#
+#my_data = genfromtxt('stadiumData.csv', delimiter=',')
+#azimuth = my_data[:,6]
+#length = my_data[:,7]
+#azimuth = azimuth[1:]
+#length = length[1:]
+#plt.scatter(azimuth,length)
+
+
+f = open('stadiumData.csv')
+csv_f = csv.reader(f)
+
+azimuth = []
+length = []
+date = []
+contributor = []
+
+for row in csv_f:
+  azimuth.append(row[6])
+  length.append(row[7])
+  date.append(row[5])
+  contributor.append(row[9])
+  
+azimuth = azimuth[1:]  
+length = length[1:]  
+date = date[1:]  
+contributor = contributor[1:]
+
+plt.scatter(azimuth,length)
+plt.xlabel('Azimuth (deg)')
+plt.xlabel('Length (m)')
