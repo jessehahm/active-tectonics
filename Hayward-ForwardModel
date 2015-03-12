@@ -1,73 +1,4 @@
-Attachment Wahrhaftig - Streetcar to Subduction.pdf successfully uploaded and added.
-Conversation opened. 10 messages. All messages read.
 
-Skip to content
-Using UC Berkeley Mail with screen readers
-You are invisible.
-Go visible
-	ALEXANDER BRYK
-	Chris Wong
-	Claire Wilkin
-	Collin Bode
-	Daniella Marie Rempe
-	Elizabeth Niespolo
-	Jasper Oshun
-	Kristen E Fauria
-	Sky M. Lovill
-	William Dietrich
-Move to Inbox
- 
-More
- 
-9 of 10
- 
-hw
-Jesse Hahm		Attachments11/19/14
-Jesse Hahm		Attachments11/19/14
-On Wed, Nov 19, 2014 at 10:24 AM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > >
-Jesse Hahm		Attachments11/20/14
-On Wed, Nov 19, 2014 at 3:45 PM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > > ...
-Jesse Hahm <wjhahm@berkeley.edu>
-	
-Attachments11/22/14
-		
-to me
-2 Attachments
-Preview attachment haywardForwardModel.py
-[Text]
-Preview attachment Assignment5_Hahm.docx
-[Word]
-Jesse Hahm <wjhahm@berkeley.edu>
-	
-Attachments11/22/14
-		
-to me
-2014-11-22 16:41 GMT-08:00 Jesse Hahm <wjhahm@berkeley.edu>:
-Attachments area
-Preview attachment haywardForwardModel.py
-[Text]
-Jesse Hahm		Attachments11/23/14
-On Sat, Nov 22, 2014 at 7:36 PM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > > ...
-Jesse Hahm		Attachments11/24/14
-On Sun, Nov 23, 2014 at 7:53 PM, Jesse Hahm <wjhahm@berkeley.edu> wrote: > > ...
-Jesse Hahm <wjhahm@berkeley.edu>
-	
-Attachments11/24/14
-		
-to me
-Attachments area
-Preview attachment assignment_6_Hahm.docx
-[Word]
-	
-Click here to Reply or Forward
-Using 1.4 GB
-©2015 Google - Terms of Service - Privacy - Program Policies
-Powered by
-Last account activity: 5 hours ago
-Details
-	
-	
-haywardForwardModel.py
 
 # -*- coding: utf-8 -*-
 """
@@ -114,5 +45,3 @@ plt.ylabel('N35W velocity (m/yr)')
  #   plt.annotate(txt, (distance[i]-8,velocity[i]-2))
 
 matplotlib.pyplot.show()
-
-Displaying haywardForwardModel.py.
